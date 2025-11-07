@@ -2,6 +2,7 @@
     --bg-color-primary: #f78A76; /*Fond corail*/
     --bg-color-secondary: #25A2C3;
     --text-bg-dark: #fff;
+    --text-lien: #f78a76;
     --font-logo: 'Pacifico';
     --font-textes: 'Open Sans';
     --font-titres-boutons: 'Montserrat';
@@ -34,15 +35,91 @@
   src: url('./fonts/montserrat-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-body{
-    background-color: white;
+*{ /* ==> RESET DE TOUTES LES MARGES SUR TOUTES LES BALISES */
+    margin: 0;
+    padding: 0;
 }
 
-#logo{
-    font-family: var(--font-logo);
+.bouton{
+    background-color: var(--bg-color-primary);
+    color: var(--text-bg-dark);
+    padding: 8px 48px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+body{
+    background-color: white;
+    font-family: var(--font-textes);
+    font-size: 18px;
 }
 
 h1, h2, h3{
     font-family: var(--font-titres-boutons);
 }
 
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ==================== HEADER ==================== */
+#bandeau{
+    text-align: center;
+    padding: 40px;
+    background-color: antiquewhite;
+}
+
+#logo a{
+    font-family: var(--font-logo);
+    color: var(--text-lien);
+    font-size: 2.5rem;
+}
+
+#menuPrincipal ul{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    gap: 1rem;
+    margin-top: 32px;
+}
+
+#menuPrincipal ul li a{
+    color: black;
+}
+
+#menuPrincipal ul li a:hover,
+#menuPrincipal ul li a.choix{
+    color: var(--text-lien);
+}
+
+/* ==================== MAIN ==================== */
+#bienvenue{
+    background-image: url(images/paysage.jpg);
+    background-size: cover;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bienvenue h1{
+    color: var(--text-lien);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+#bienvenue p{
+    width: 60%;
+    color: var(--text-bg-dark);
+    padding: 8px 24px;
+    margin: 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
