@@ -51,6 +51,20 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.bouton:hover{
+    background-color: #25A2C3;
+    transform: scale(1.1) rotateX(360deg);
+    -webkit-transform: scale(1.1) rotateX(360deg);
+    -moz-transform: scale(1.1) rotateX(360deg);
+    -ms-transform: scale(1.1) rotateX(360deg);
+    -o-transform: scale(1.1) rotateX(360deg);
 }
 
 
@@ -213,6 +227,22 @@ ul{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    transition: transform 0.2s;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.4s;
+}
+
+/* #articles .article :hover{
+} */
+
+.article:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
 }
 
 #articles .article h3{
@@ -222,6 +252,11 @@ ul{
     margin-bottom: 16px;
     font-weight: 1000;
 }
+
+#articles .article h3 a{
+    color: var(--text-titre-cat);
+}
+
 
 #articles .article .text{
     padding: 16px 8px;
@@ -260,6 +295,11 @@ ul{
 
 #pied .ligne p{
     font-size: 0.8rem;
+    text-align: center;
+}
+
+#pied .ligne p a{
+    color: white;
 }
 
 #pied ul{

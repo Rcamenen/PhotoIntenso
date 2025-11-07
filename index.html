@@ -1,110 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photo Intenso</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <!-- Lien pour prise en charge des icones de fontawesome, lien récupéré sur cdnjs en cherchant fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header id="bandeau">
-        <p id="logo"><a href="index.html">Photo Intenso</a></p>
-        <nav id="menuPrincipal">
-            <ul>
-                <li><a class="choix" href="index.html">Accueil</a></li>
-                <li><a href="">A Propos</a></li>
-                <li><a href="">Galerie</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+      <p id="logo"><a href="index.html">Photo Intenso</a></p>
+      <nav id="menuPrincipal">
+        <ul>
+          <li><a class="choix" href="index.html">Accueil</a></li>
+          <li><a href="">A Propos</a></li>
+          <li><a href="">Galerie</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main id="contenu">
-        <div id="bienvenue">
-            <h1>Des images incroyables</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quasi, ullam veritatis commodi praesentium rem necessitatibus eaque labore, architecto excepturi porro quod voluptas sapiente consequuntur dolor aut harum eius aspernatur?</p>
-            <a class="bouton" href="#">PLUS D'INFOS</a>
+      <div id="bienvenue">
+        <h1>Des images incroyables</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+          quasi, ullam veritatis commodi praesentium rem necessitatibus eaque
+          labore, architecto excepturi porro quod voluptas sapiente consequuntur
+          dolor aut harum eius aspernatur?
+        </p>
+        <a class="bouton" href="#">PLUS D'INFOS</a>
+      </div>
+
+      <section id="categories" class="container">
+        <div class="colonne">
+          <div class="cat cat-left">
+            <h2>Paysages</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+              quidem!
+            </p>
+          </div>
+
+          <div class="cat cat-left">
+            <h2>Tous en actions</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+              quidem!
+            </p>
+          </div>
         </div>
 
-        <section id="categories" class="container">
+        <img
+          id="image-cat"
+          src="images/pic01.jpg"
+          alt="Téléphone tenu dans une main pour prendre une photo de la mer"
+        />
 
-            <div class="colonne">
+        <div class="colonne">
+          <div class="cat cat-right">
+            <h2>Au delà du temps</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+              quidem!
+            </p>
+          </div>
 
-                <div class="cat cat-left">
-                    <h2>Paysages</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quidem!</p>
-                </div>
-
-                <div class="cat cat-left">
-                    <h2>Tous en actions</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quidem!</p>
-                </div>
-
-            </div>
-
-            <img id="image-cat" src="images/pic01.jpg" alt="">
-
-            <div class="colonne">
-
-                <div class="cat cat-right">
-                    <h2>Au delà du temps</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quidem!</p>
-                </div>
-
-                <div class="cat cat-right">
-                    <h2>Portraits</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quidem!</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <div id="CTA">
-            <h3>Livrez-nous votre avis</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis illum odit dolore provident? Repellat, reprehenderit? Culpa cumque sed voluptatem eaque.</p>
-            <a class="bouton bouton--white bouton--small" href="">C'est à vous !</a>
+          <div class="cat cat-right">
+            <h2>Portraits</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+              quidem!
+            </p>
+          </div>
         </div>
-        <section id="articles">
-            <article class="article">
-                <img src="images/pic02.jpg" alt="">
-                <div class="text">
-                    <h3>Sur la rivière</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, molestiae!</p>
-                </div>
-            </article>
-            <article class="article">
-                <img src="images/pic03.jpg" alt="">
-                <div class="text">
-                    <h3>Ascension périlleuse</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, molestiae!</p>
-                </div>
-            </article>            
-            <article class="article">
-                <img src="images/pic04.jpg" alt="">
-                <div class="text">
-                    <h3>Architecture</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, molestiae!</p>
-                </div>
-            </article>
-        </section>
+      </section>
+
+      <div id="CTA">
+        <h3>Livrez-nous votre avis</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis illum
+          odit dolore provident? Repellat, reprehenderit? Culpa cumque sed
+          voluptatem eaque.
+        </p>
+        <a class="bouton bouton--white bouton--small" href="">C'est à vous !</a>
+      </div>
+      <section id="articles">
+        <article class="article">
+          <img src="images/pic02.jpg" alt="Barque sur la rivière" />
+          <div class="text">
+            <h3><a href="">Sur la rivière</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              molestiae!
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="images/pic03.jpg" alt="Montagne avec ciel nuageux" />
+          <div class="text">
+            <h3><a href="">Ascension périlleuse</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              molestiae!
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="images/pic04.jpg" alt="Escalier" />
+          <div class="text">
+            <h3><a href="">Architecture</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              molestiae!
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
-
     <footer id="pied">
-        <div class="ligne">
-            <h3>Restons en contact</h3>
+      <div class="ligne">
+        <h3>Restons en contact</h3>
 
-            <ul>
-                <li><p>(+33)297704142</p></li>
-                <li><p>information@gretabzh.com</p></li>
-                <li><p>1 Rue Winston Churchill</p></li>
-            </ul>
-        </div>
-        <div class="ligne">
-            <p>Copyright</p>
-        </div>
+        <ul>
+          <li>
+            <p><i class="fa-solid fa-phone"></i>(+33)297704142</p>
+          </li>
+          <!--class font awesome-->
+          <li>
+            <p><i class="fa-solid fa-envelope"></i>information@gretabzh.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fa-solid fa-map-location-dot"></i> 1 Rue Winston
+              Churchill
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="ligne">
+        <p>
+          Copyright &copy; Tous droits réservés <br />
+          <a href="#">Infos légales</a>
+        </p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
